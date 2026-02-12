@@ -11,7 +11,9 @@
     "dev-f": "fastify start -w -l info -P app.js",
     "start-f": "fastify start -l info app.js",
     "dev": "node --watch server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node scripts/index.js",
+    "seed-simple": "node scripts/simpleSeed.js"
   },
   "keywords": [],
   "author": "",
