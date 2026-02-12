@@ -398,7 +398,14 @@ export const getSalesReports = async (f, payload) => {
   }
 
   // Backtracing (default + relative time)
-  const res = await getSalesByBacktracing(f, payload);
+  const backtrackValues = {
+    year: backtrackYear,
+    month: backtrackMonth,
+    week: backtrackWeek,
+    day: backtrackDay,
+    startDate: backtrackStartDate,
+  };
+  const res = await getSalesByBacktracing(f, backtrackValues);
   return {
     data: res,
     meta: {

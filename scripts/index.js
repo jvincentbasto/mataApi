@@ -20,12 +20,12 @@ const cleanup = async (db) => {
 
   // delete dependents first
   await Promise.all([
-    db.collection("sales").deleteMany({}),
-    db.collection("productVariants").deleteMany({}),
-    db.collection("products").deleteMany({}),
-    db.collection("customers").deleteMany({}),
     db.collection("users").deleteMany({}),
     db.collection("tokenBlacklist").deleteMany({}),
+    db.collection("customers").deleteMany({}),
+    db.collection("products").deleteMany({}),
+    db.collection("productVariants").deleteMany({}),
+    db.collection("sales").deleteMany({}),
   ]);
 };
 

@@ -7,8 +7,8 @@ export default fp(async (fastify) => {
     openapi: {
       openapi: "3.0.0",
       info: {
-        title: "Sales API",
-        description: "Sales API documentation",
+        title: "Mata API",
+        description: "Mata API documentation",
         version: "1.0.0",
       },
       servers: [

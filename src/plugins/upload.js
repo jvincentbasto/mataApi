@@ -197,10 +197,10 @@ export default fp(async (fastify) => {
 
   fastify.decorate("upload", () => {
     let { upload, remove } = localMap;
-    if (fastify.config.NODE_ENV === "production") {
-      upload = cloudinaryMap.upload;
-      remove = cloudinaryMap.remove;
-    }
+    // if (fastify.config.NODE_ENV === "production") {
+    //   upload = cloudinaryMap.upload;
+    //   remove = cloudinaryMap.remove;
+    // }
 
     const data = {
       constants,

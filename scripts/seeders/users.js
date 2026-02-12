@@ -11,12 +11,12 @@ export const seedUsers = createWindowSeeder({
     const records = [];
 
     // records.push({
-    //   name: "testing",
-    //   email: "testing@gmail.com",
+    //   name: "myuserrandom",
+    //   email: "myuserrandom@gmail.com",
     //   password: PASSWORD_HASH,
-    //   role: faker.helpers.arrayElement(["normal", "admin"]),
+    //   role: "admin",
     //   image: null,
-    //   emailVerified: faker.helpers.arrayElement([true, false]),
+    //   emailVerified: true,
     //   createdAt: dateWindows.random(from, to),
     //   deletedAt: null,
     // });
